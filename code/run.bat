@@ -1,0 +1,6 @@
+
+javac *.java
+
+
+java LoginDemo
+
