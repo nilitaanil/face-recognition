@@ -1,0 +1,57 @@
+
+FACE
+------------
+create table face(cid INT(3),
+	          fname VARCHAR(20) NOT NULL,
+	          lname VARCHAR(20) NOT NULL,
+                  aname VARCHAR(20) NOT NULL,
+                  dob date,
+	          age INT(2),
+                  gender VARCHAR(10) NOT NULL,
+                  address VARCHAR(10)NOT NULL,
+                  city VARCHAR(10) NOT NULL,
+	          state VARCHAR(10) NOT NULL,
+                  arresteddate date,
+	          crimein VARCHAR(10) NOT NULL,
+                  photo  VARCHAR(50) NOT NULL
+                           );
+
+FACE_HEIGHTS
+-------------------------
+
+
+create table face_height(cid INT(5),
+		    hair INT(5),
+		    forehead INT(5),
+		    eyes INT(5),
+		    nose INT(5),
+		    lips INT(5),
+		    chin INT(5)
+		    );
+
+FACE_SUSPECTPHOTO
+-----------------------------------
+
+create table face_suspectphoto(crimeid INT(5),
+		               suspectphoto VARCHAR(15) NOT NULL,
+                                                    photo_height VARCHAR(15) NOT NULL
+                                                    );
+
+
+CRIMINAL_SUSPECT
+-------------------------------
+create table criminal_suspect(cid INT(5),
+		            criminalId INT(5)
+                                                  );
+
+FACE_SUSPECTS
+---------------------------
+
+create table face_suspects(crimeid INT(5),
+		            cid INT(5)
+                                            );
+
+
+ 	 	  		
+		
+		
